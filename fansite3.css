@@ -53,7 +53,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #dc3f8a; /* Couleur de fond au survol */
+  background-color: #dc3f8a; /* Couleur de fond au survol de la souris*/
 }
 
 /* Section bio */
@@ -182,7 +182,7 @@ body {
   border-radius: 5px; /* Coins arrondis */
   font-size: 1rem; /* Taille du texte */
   cursor: pointer; /* Curseur pointer au survol */
-  transition: background-color 0.3s; /* Transition douce pour le survol */
+  transition: background-color 0.3s; /* Transition pour le survol de la souris */
 }
 
 .contact-form button:hover {
