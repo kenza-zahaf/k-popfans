@@ -14,6 +14,10 @@ body {
   text-align: center;
   padding: 20px;
 }
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 /* En-tête */
 .main-header {
@@ -75,7 +79,7 @@ body {
   margin: 20px auto;
 }
 
-/* Galerie des vidéos YouTube */
+/* Galerie des membres */
 .gallery-section {
   background-color: #fff0f5;
   padding: 50px 20px;
@@ -96,13 +100,46 @@ body {
 .img-member {
   background-color: #ffccf2;
   border: 2px solid #ff66b3;
-  width: calc(50% - 20px);
-  margin: 10px;
+  width: calc(33.33% - 20px); /* Trois images par ligne */
+  margin: 10px; /* Marges autour des images */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 
+.img-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Section Vidéos */
+
+.videos-section {
+    padding: 50px 20px;
+    background-color: rgba(255, 252, 253, 0.5); /* Couleur de fond plus transparente */
+    backdrop-filter: blur(10px); /* Flou de l'arrière-plan */
+    border-radius: 10px; /* Pour des bords arrondis */
+}
+
+
+.videos-section h2 {
+  font-size: 2rem;
+  color: #ff66b3;
+  margin: 20px 10px;
+  border-bottom: 2px solid #c77fa3;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/*section actualités*/
+.actualites-section p {
+}
 /* Section de contact */
 .contact-section {
   background-color: rgba(255, 255, 255, 0.8);
@@ -114,10 +151,16 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.contact-section h2 {
+.contact-section h2,
+.actualites-section h2,
+.evenements-section h2 {
   font-size: 2rem;
   color: #dc5896;
   margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom: 2px solid #c77fa3;
+  text-align: center;
 }
 
 .contact-form {
@@ -234,5 +277,15 @@ footer p {
 @media screen and (max-width: 768px) {
   .img-member {
     width: calc(100% - 20px);
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    max-width: 300px;
   }
 }
