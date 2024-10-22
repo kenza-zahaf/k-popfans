@@ -29,31 +29,31 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #ff66b3; /* Couleur de fond de la navbar */
-  padding: 10px 0; /* Espacement vertical */
+  background-color: #ff66b3;
+  padding: 10px 0;
 }
 
 .navbar ul {
-  list-style: none; /* Supprime les puces de la liste */
-  display: flex; /* Affiche les éléments en ligne */
-  justify-content: center; /* Centre les éléments horizontalement */
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar li {
-  margin: 0 15px; /* Marges entre les éléments de la liste */
+  margin: 0 15px;
 }
 
 .navbar a {
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: white; /* Couleur du texte des liens */
-  font-weight: bold; /* Gras pour le texte */
-  padding: 8px 16px; /* Espacement autour du texte */
-  transition: background-color 0.3s; /* Transition pour les effets au survol */
-  border-radius: 5px; /* Bords arrondis */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
 }
 
 .navbar a:hover {
-  background-color: #dc3f8a; /* Couleur de fond au survol de la souris*/
+  background-color: #dc3f8a;
 }
 
 /* Section bio */
@@ -66,7 +66,6 @@ body {
   font-size: 2rem;
   color: #ff66b3;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  padding: 20px 20px;
 }
 
 .bio-section p {
@@ -76,7 +75,7 @@ body {
   margin: 20px auto;
 }
 
-/* Galerie des membres */
+/* Galerie des vidéos YouTube */
 .gallery-section {
   background-color: #fff0f5;
   padding: 50px 20px;
@@ -97,133 +96,133 @@ body {
 .img-member {
   background-color: #ffccf2;
   border: 2px solid #ff66b3;
-  width: calc(33.33% - 20px); /* Trois images par ligne */
-  margin: 10px; /* Marges autour des images */
+  width: calc(50% - 20px);
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-}
-
-.img-member img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.img-member p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #ff66b3;
-}
-
-.bio {
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 5px;
 }
 
 /* Section de contact */
 .contact-section {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Fond blanc légèrement transparent */
-  border: 2px solid #ff66b3; /* Bordure rose */
-  border-radius: 10px; /* Coins arrondis */
-  padding: 30px; /* Espacement intérieur */
-  margin: 30px auto; /* Espacement extérieur */
-  max-width: 600px; /* Largeur maximale du formulaire */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ff66b3;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-section h2 {
   font-size: 2rem;
-  color: #dc5896; /* Couleur du titre */
-  margin-bottom: 20px; /* Espacement en bas du titre */
+  color: #dc5896;
+  margin-bottom: 20px;
 }
 
-/* Styles du formulaire */
 .contact-form {
   display: flex;
-  flex-direction: column; /* Aligne les éléments en colonne */
-  gap: 15px; /* Espacement entre les éléments du formulaire */
-}
-
-.contact-form label {
-  font-weight: bold; /* Texte en gras */
-  color: #555; /* Couleur du texte */
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px; /* Espacement intérieur */
-  border: 2px solid #ff66b3; /* Bordure rose */
-  border-radius: 5px; /* Coins arrondis */
-  font-size: 1rem; /* Taille du texte */
-  color: #333; /* Couleur du texte */
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #dc5896; /* Couleur de la bordure au focus */
-  outline: none; /* Supprime l'outline par défaut */
+  padding: 10px;
+  border: 2px solid #ff66b3;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
 }
 
 .contact-form button {
-  background-color: #dc5896; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte du bouton */
-  border: none; /* Supprime la bordure par défaut */
-  padding: 10px; /* Espacement intérieur */
-  border-radius: 5px; /* Coins arrondis */
-  font-size: 1rem; /* Taille du texte */
-  cursor: pointer; /* Curseur pointer au survol */
-  transition: background-color 0.3s; /* Transition pour le survol de la souris */
+  background-color: #dc5896;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
-  background-color: #ff66b3; /* Couleur de fond au survol */
+  background-color: #ff66b3;
 }
 
-/* Styles pour les sections de liens */
+/* Section des liens utiles */
 .links-section {
-  margin-top: 40px; /* Espacement au-dessus */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ff66b3;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .links-section h2 {
   font-size: 2rem;
-  color: #dc5896; /* Couleur du titre */
-  margin-bottom: 20px; /* Espacement en bas du titre */
+  color: #dc5896;
+  margin-bottom: 20px;
 }
 
 .links-section ul {
-  list-style-type: none; /* Supprime les puces */
-  padding: 0; /* Supprime le padding par défaut */
+  list-style-type: none;
+  padding: 0;
 }
 
 .links-section li {
-  margin: 10px 0; /* Espacement entre les liens */
+  margin: 10px 0;
 }
 
 .links-section a {
-  text-decoration: none; /* Supprime le soulignement des liens */
-  color: #dc5896; /* Couleur du texte des liens */
-  transition: color 0.3s; /* Transition pour la couleur */
+  text-decoration: none;
+  color: #dc5896;
+  transition: color 0.3s;
 }
 
 .links-section a:hover {
-  color: #ff66b3; /* Couleur au survol */
+  color: #ff66b3;
+}
+
+/* Réseaux sociaux */
+.social-media-links {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ff66b3;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.logos-container ul {
+  display: flex;
+  gap: 20px;
+}
+
+.logos-container li {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.logos-container li:hover {
+  color: #dc5896;
 }
 
 /* Pied de page */
 footer {
   background-color: #ff66b3;
   color: white;
-  padding: 20px 0;
+  padding: 10px auto;
   margin-top: 30px;
 }
 
@@ -234,22 +233,6 @@ footer p {
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .img-member {
-    width: calc(50% - 20px); /* Deux images par ligne sur écrans plus petits */
-  }
-
-  .contact-section {
-    width: calc(90% - 40px); /* Largeur du formulaire pour écrans plus petits */
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .img-member {
-    width: calc(100% - 20px); /* Une image par ligne sur très petits écrans */
-  }
-
-  .contact-section {
-    width: calc(
-      100% - 40px
-    ); /* Largeur du formulaire pour très petits écrans */
+    width: calc(100% - 20px);
   }
 }
