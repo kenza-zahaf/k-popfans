@@ -1,30 +1,91 @@
-body{
-    background-color: rgb(98, 189, 231);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.menu ul{
-    display: flex;
-    margin: 20 0px;
-    text-align: justify;
-    text-decoration: rgb(30, 10, 47);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: normal;
-}
-.menu a{
-    margin: 0 20px;
-}
-header{
-    display: flex;
-    justify-content: space-around;
-    background-color: blanchedalmond;
-    margin: 20px 0;
-}
- section img{
-    display:flex;
-    justify-content:center;
-    height: 500px;
-    width: 300px;
-    margin-top:  50px;
-    flex-wrap: wrap;
-    gap: 20px;
 
+body {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #58b9dc;
+  padding: 20px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px; /*ajout du padding pour un meilleur effet au survol*/
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+/* Effet de survol sur les liens */
+.menu a:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.599); /* Ombre au survol */
+}
+
+/* Styles pour le champ de recherche */
+.menu input[type="search"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none; /* Suppression de la bordure */
+}
+
+.célébrités {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.celeb {
+  background-color: #ffffff;
+  border: 1px solid #5861dc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.celeb img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.celeb h2 {
+  color: #4f8ed5;
+  margin: 10px 0;
+}
+
+.celeb p {
+  color: #555;
+}
+
+.celeb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #58b9dc;
+  color: white;
 }
