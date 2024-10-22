@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9; /* Fond sobre */
+  text-align: center;
+  padding: 20px;
+}
+
+/* En-tête */
+.main-header {
+  background-color: #282828; /* Couleur sombre pour l'en-tête */
+  color: white;
+  padding: 20px 0;
+}
+
+.main-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #404040; /* Couleur sobre pour la barre de navigation */
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white; /* Couleur des liens */
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #505050; /* Couleur de survol */
+}
+
+/* Section de contact */
+.contact-section {
+  background-color: #ffffff; /* Fond blanc pour le formulaire */
+  border: 1px solid #ccc; /* Bordure légère */
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #282828; /* Couleur sombre pour le titre */
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form textarea {
+  resize: none; /* Empêche le redimensionnement */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc; /* Bordure grise */
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form button {
+  background-color: #505050; /* Couleur du bouton */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #c3bdbd; /* Couleur de survol du bouton */
+  color: black;
+}
+
+/* Pied de page */
+footer {
+  background-color: #282828; /* Couleur sombre pour le pied de page */
+  color: white;
+  padding: 10px auto;
+  margin-top: 30px;
+}
+
+footer p {
+  margin: 0;
+}
