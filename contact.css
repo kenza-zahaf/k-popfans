@@ -27,17 +27,19 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #675c5c; /* Couleur sobre pour la barre de navigation */
-  padding: 10px 0;
   margin: 20px;
+  background-color: #666969eb;
+  padding: 10px 0;
 }
 .navbar .menu-hamburger {
   display: flex;
   position: absolute;
-  top: 45px;
-  right: 60px;
+  top: 35px;
+  right: 35px;
   width: 35px;
+  display: none;
 }
+
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -51,11 +53,6 @@ body {
   color: white;
   font-weight: bold; /*en gras*/
   padding: 8px 16px;
-  /* transition: background-color: 0.3s; */
-}
-
-.navbar a:hover {
-  background-color: #b8abab; /* Couleur de survol */
 }
 
 /* Section de contact */
