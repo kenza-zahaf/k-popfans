@@ -152,6 +152,7 @@ img{
     background-color: aquamarine;
     border-color: rgb(17, 18, 18);
     justify-items: right;
+    border-radius: 20px;
 
 }
 img .photos{
