@@ -10,19 +10,20 @@ body{
 }
 p{
    text-align:start; 
-   text-decoration: rgb(63, 1, 70);
+   text-decoration: rgb(21, 8, 18);
    font-size: large;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 200;
     font-style: inherit;
+    box-shadow: 10px 0px 20PX grey;
 }
 h1{
     text-align: center;
     text-decoration: solid;
     text-shadow: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(123, 21, 21) ;
-    background-color:bisque;
+    color: rgb(9, 9, 9) ;
+   
 }
 
 h2{
@@ -33,34 +34,32 @@ h2{
     text-decoration-color: blue;
     color: blue;
 }
+
+h3{
+    text-align: center;
+    text-decoration: underline rgb(42, 5, 99);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 15px;
+    text-decoration-color: blue;
+    color: blue;  
+}
 .menu ul{
     display: flex;
     margin: 20 0px;
     text-align: justify;
-    text-decoration: rgb(30, 10, 47);
+    text-decoration: rgb(226, 225, 227);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
+    box-shadow: 30px 20px 0px;
 }
 .menu a{
     margin: 0 20px;
 }
 
-footer{
-    margin: auto;
-    padding: auto;
-    gap:50px;
-    text-decoration: rgb(63, 148, 176);
-    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
 
-.menu ul{
-    display: flex;
-    margin: 20 0px;
-    text-align: justify;
-    text-decoration: rgb(30, 10, 47);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: normal;
-}
+
+
+
 .menu a{
     margin: 0 20px;
 }
@@ -75,9 +74,10 @@ section li{
 
 }
  p footer{
-    
+    display:flex;
+    justify-content: center;
     text-align: center;
-   text-decoration: rgb(55, 92, 213);
+    text-decoration: rgb(55, 92, 213);
    font-size: large;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-weight: 200;
@@ -117,9 +117,7 @@ footer {
     margin-top: 50px;
 }
 
-footer nav ul {
-    justify-content: center;
-}
+
 
 form {
     display: flex;
@@ -154,6 +152,7 @@ img{
     background-color: aquamarine;
     border-color: rgb(17, 18, 18);
     justify-items: right;
+    border-radius: 20px;
 
 }
 img .photos{
@@ -176,7 +175,7 @@ li{
     font-size: large;
     font-style:oblique;
     text-shadow: 10px;
-    text-decoration: underline rgb(64, 39, 5);
+    text-decoration: rgb(90, 5, 64);
 }
 .photos img{
    display:flex;
@@ -189,3 +188,29 @@ main img{
     justify-content: right;
     
 }
+.réseaux img{
+    height: 30px;
+    width: 30px;
+}
+.réseaux a{
+    text-decoration: rgb(7, 104, 99);
+    color:rgb(70, 70, 68);
+}
+.fansite{
+    display: flex;
+    justify-content:right;
+    margin: 20px;
+}
+.site{
+    display: flex;
+    justify-content: left ;
+}
+.video {
+    
+    width: 560px;
+    height: 315px;
+    
+  }
+  header{
+    background-color: rgb(207, 197, 197);
+  }
