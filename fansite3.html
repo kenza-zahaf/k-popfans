@@ -6,7 +6,10 @@
     <meta name="description" content="Page de fan dédiée aux Baby Monster" />
     <title>Baby Monster Fanpage</title>
     <link rel="stylesheet" href="./fanssite3.css" />
-    <!-- Lien vers Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -18,23 +21,29 @@
   <body>
     <!-- En-tête principal -->
     <header class="main-header">
-      <h1>Bienvenue sur la page de fans des Baby Monster</h1>
-      <!-- Barre de navigation -->
+      <h1>Bienvenue sur la page des fans des Baby Monsters</h1>
       <nav class="navbar">
-        <ul>
-          <li><a href="./index.html">Accueil</a></li>
-          <li><a href="./fansite1.html">Aznavour</a></li>
-          <li><a href="./fansite2.html">Emilia-Clarke</a></li>
-          <li><a href="./fansite3.html">BabyMonster</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><input type="search" placeholder="Rechercher" /></li>
-        </ul>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./fansite1.html">Aznavour</a></li>
+            <li><a href="./fansite2.html">J-Hope</a></li>
+            <li><a href="./fansite3.html">BabyMonster</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><input type="search" placeholder="Rechercher" /></li>
+          </ul>
+        </div>
+        <img
+          src="./img_fansite3/menubuger/menu-btn.png"
+          alt="menu-hamburger"
+          class="menu-hamburger"
+        />
       </nav>
     </header>
 
-    <!-- Section Bio -->
-    <section id="bio" class="bio-section">
-      <h2>À propos des Baby Monster</h2>
+    <!-- section Bio -->
+    <section class="bio-section">
+      <h2>A propos des Baby Monsters</h2>
       <p>
         Baby Monster est un groupe révolutionnaire qui a captivé des millions de
         fans à travers le monde avec leur musique énergique et leur style
@@ -43,12 +52,12 @@
       </p>
     </section>
 
-    <!-- Galerie d'images -->
+    <!-- galerie d'images -->
     <section id="gallery" class="gallery-section">
       <h2>Galerie des Membres</h2>
       <div class="image-container">
         <div class="img-member" id="aeyon">
-          <img src="./img/Ayeon.jpg" alt="Aeyon" />
+          <img src="./img_fansite3/Ayeon.jpg" alt="Aeyon" />
           <p>Aeyon</p>
           <p class="bio">
             Aeyon est connue pour sa voix puissante et son incroyable présence
@@ -56,7 +65,7 @@
           </p>
         </div>
         <div class="img-member" id="asa">
-          <img src="./img/Asa.jpg" alt="Asa" />
+          <img src="./img_fansite3/Asa.jpg" alt="Asa" />
           <p>Asa</p>
           <p class="bio">
             Asa est une danseuse talentueuse et apporte une énergie unique au
@@ -64,7 +73,7 @@
           </p>
         </div>
         <div class="img-member" id="rami">
-          <img src="./img/Rami.jpg" alt="Rami" />
+          <img src="./img_fansite3/Rami.jpg" alt="Rami" />
           <p>Rami</p>
           <p class="bio">
             Rami est appréciée pour son charisme et son talent d'interprétation.
@@ -72,7 +81,7 @@
           </p>
         </div>
         <div class="img-member" id="rora">
-          <img src="./img/Rora.jpg" alt="Rora" />
+          <img src="./img_fansite3/Rora.jpg" alt="Rora" />
           <p>Rora</p>
           <p class="bio">
             Rora se distingue par sa polyvalence en tant que chanteuse et
@@ -80,15 +89,15 @@
           </p>
         </div>
         <div class="img-member" id="ruka">
-          <img src="./img/ruka.jpg" alt="Ruka" />
+          <img src="./img_fansite3/ruka.jpg" alt="Ruka" />
           <p>Ruka</p>
           <p class="bio">
             Ruka est l'une des figures créatives du groupe, connue pour son
-            style unique et sa capacité à écrire des chansons captivantes.
+            style unique et sa capacité à écrire des chansons captivantes
           </p>
         </div>
         <div class="img-member" id="pharita">
-          <img src="./img/Pharita.jpg" alt="Pharita" />
+          <img src="./img_fansite3/Pharita.jpg" alt="Pharita" />
           <p>Pharita</p>
           <p class="bio">
             Pharita apporte une voix douce et une aura charmante, capturant le
@@ -98,8 +107,8 @@
       </div>
     </section>
 
-    <!-- Section Vidéos -->
-    <section id="videos" class="videos-section">
+    <!-- section Vidéos -->
+    <section class="videos-section">
       <h2>Vidéos des Baby Monster</h2>
       <div class="video-container">
         <iframe
@@ -134,9 +143,9 @@
       </div>
     </section>
 
-    <!-- Section Actualité et Événements -->
-    <section id="actu-evenements" class="actu-evenements-section">
-      <h2>Actualité et Événements</h2>
+    <!-- Section actualités et Evenements -->
+    <section class="actu-evenements-section">
+      <h2>Actualistés et Evènements</h2>
       <div class="actu-evenements-container">
         <div class="actu-block">
           <h3>Actualités</h3>
@@ -148,24 +157,23 @@
             la toute première piste de ce nouvel opus.
           </p>
         </div>
-
-        <div class="evenements-block">
-          <h3>Événements à Venir</h3>
+        <div class="actu-block">
+          <h3>Evènements à Venir</h3>
           <ul>
-            <li><strong>Concert à Paris :</strong> 15 octobre 2024</li>
+            <li><strong>Concert à Paris:à venir</strong></li>
             <li>
-              <strong>Nouvelle tournée mondiale :</strong> Début janvier 2025
+              <strong>Nouvellle tournée mondiale : début janvier 2025</strong>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Section Liens Utiles -->
+    <!-- section Liens Utiles -->
     <section class="links-section">
       <h2>Liens Utiles</h2>
       <div class="links-container">
-        <h3>Liens vers d'autres sites de fans</h3>
+        <h3>Liens vers d'autres sites de fan</h3>
         <ul>
           <li>
             <a href="https://kprofiles.com/babymonster-members-profile/"
@@ -220,7 +228,15 @@
 
     <!-- Pied de page -->
     <footer>
-      <p>2024 Baby Monster. Tous droits réservés.</p>
+      <p>2024 Baby Monster. Tous droit réservés</p>
     </footer>
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuHamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
   </body>
 </html>
