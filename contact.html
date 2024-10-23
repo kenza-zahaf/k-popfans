@@ -10,14 +10,20 @@
     <header>
       <!-- Barre de navigation -->
       <nav class="navbar">
-        <ul>
-          <li><a href="./index.html">Accueil</a></li>
-          <li><a href="./fansite1.html">Aznavour</a></li>
-          <li><a href="./fansit2.html">Emilia-Clarke</a></li>
-          <li><a href="./fansite3.html">BabyMonster</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><input type="search" placeholder="Rechercher" /></li>
-        </ul>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./fansite1.html">Aznavour</a></li>
+            <li><a href="./fansit2.html">Emilia-Clarke</a></li>
+            <li><a href="./fansite3.html">BabyMonster</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          src="./img_fansite3/menubuger/menu-btn.png"
+          alt="menu-hamburger"
+          class="menu-hamburger"
+        />
       </nav>
     </header>
     <main>
@@ -39,4 +45,12 @@
       </section>
     </main>
   </body>
+  <script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuHamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu");
+    });
+  </script>
 </html>

@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
-
-
 
 body {
   background-color: #f9f9f9; /* Fond sobre */
@@ -15,7 +15,7 @@ body {
 
 /* En-tête */
 .main-header {
-  background-color: #282828; /* Couleur sombre pour l'en-tête */
+  background-color: #807979; /* Couleur sombre pour l'en-tête */
   color: white;
   padding: 20px 0;
 }
@@ -27,31 +27,35 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #404040; /* Couleur sobre pour la barre de navigation */
+  background-color: #675c5c; /* Couleur sobre pour la barre de navigation */
   padding: 10px 0;
+  margin: 20px;
 }
-
+.navbar .menu-hamburger {
+  display: flex;
+  position: absolute;
+  top: 45px;
+  right: 60px;
+  width: 35px;
+}
 .navbar ul {
-  list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 20px;
 }
-
 .navbar li {
-  margin: 0 15px;
+  margin: 15px 15px; /*espace les li*/
 }
-
 .navbar a {
-  text-decoration: none;
-  color: white; /* Couleur des liens */
-  font-weight: bold;
+  color: white;
+  font-weight: bold; /*en gras*/
   padding: 8px 16px;
-  transition: background-color 0.3s;
-  border-radius: 5px;
+  /* transition: background-color: 0.3s; */
 }
 
 .navbar a:hover {
-  background-color: #505050; /* Couleur de survol */
+  background-color: #b8abab; /* Couleur de survol */
 }
 
 /* Section de contact */
@@ -115,4 +119,45 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* *******************MEDIA QUERIES************************* */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0;
+    display: block;
+  }
+  .nav-links {
+    display: none; /*cacher le menu par défaut*/
+  }
+  .navbar .menu-hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  /*couleur du png en gris*/
+  .menu-hamburger {
+    filter: invert(20%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(85%)
+      contrast(90%);
+  }
+
+  .nav-links.mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(108, 104, 108, 0.884);
+    backdrop-filter: blur(200px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2rem;
+  }
 }
