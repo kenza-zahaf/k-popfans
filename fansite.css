@@ -29,6 +29,7 @@ header {
   top: 35px;
   right: 35px;
   width: 35px;
+  display: none;
 }
 
 .navbar ul {
@@ -44,11 +45,8 @@ header {
   color: white;
   font-weight: bold; /*en gras*/
   padding: 8px 16px;
-  /* transition: background-color: 0.3s; */
 }
-/* .navbar a:hover {
-  background-color: #dc3f8a;
-} */
+
 input[type="search"] {
   width: 200px; /*ajuste de la largeur à l'input*/
   padding: 12px; /*Ajuste la hauteur*/
