@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -12,32 +14,48 @@ body {
 }
 
 header {
-  background-color: #58b9dc;
+  background-color: #a4d0e2;
   padding: 20px 0;
 }
 
-.menu {
-  list-style: none;
+.navbar {
+  margin: 20px;
+  background-color: #0f7686eb;
+  padding: 10px 0;
+}
+.navbar .menu-hamburger {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  width: 35px;
+}
+
+.navbar ul {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
 }
-
-.menu li {
-  margin: 0 15px;
+.navbar li {
+  margin: 15px 15px; /*espace les li*/
 }
-
-.menu a {
-  text-decoration: none;
+.navbar a {
   color: white;
-  padding: 10px 15px; /*ajout du padding pour un meilleur effet au survol*/
-  font-weight: bold;
-  transition: transform 0.3s ease;
+  font-weight: bold; /*en gras*/
+  padding: 8px 16px;
+  /* transition: background-color: 0.3s; */
 }
-/* Effet de survol sur les liens */
-.menu a:hover {
-  transform: scale(1.1); /* Agrandissement au survol */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.599); /* Ombre au survol */
+/* .navbar a:hover {
+  background-color: #dc3f8a;
+} */
+input[type="search"] {
+  width: 200px; /*ajuste de la largeur à l'input*/
+  padding: 12px; /*Ajuste la hauteur*/
+  font-size: 1.2rem; /*augmente la taille du texte*/
+  border-radius: 30px; /*arrondit les bordures de l'input*/
+  outline: none; /*enllève le contour bleu par défaut*/
+  /* transition: border-color 0.3s; transition effet qd on ecrit */
 }
 
 /* Styles pour le champ de recherche */
@@ -88,4 +106,37 @@ footer {
   padding: 10px 0;
   background-color: #58b9dc;
   color: white;
+}
+/* ****************MEDIA QUERIES*********************** */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0;
+    display: block;
+  }
+  .nav-links {
+    display: none; /*cacher le menu par défaut*/
+  }
+  .navbar .menu-hamburger {
+    display: block;
+  }
+  .nav-links.mobile-menu {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(232, 226, 231, 0.884);
+    backdrop-filter: blur(200px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links ul li {
+    margin: 25px 0;
+    font-size: 1.2rem;
+  }
 }
