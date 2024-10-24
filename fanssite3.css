@@ -44,6 +44,7 @@ p {
   top: 35px;
   right: 35px;
   width: 35px;
+  display: none;
 }
 .menu-hamburger {
   filter: invert(63%) sepia(78%) saturate(780%) hue-rotate(290deg)
