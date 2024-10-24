@@ -248,6 +248,10 @@ footer p {
   .nav-links {
     display: none; /*cacher le menu par défaut*/
   }
+  .nav-links a {
+    color: black;
+  }
+  
   .navbar .menu-hamburger {
     display: block;
   }

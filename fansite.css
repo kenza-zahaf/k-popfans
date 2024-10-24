@@ -30,6 +30,8 @@ header {
   right: 35px;
   width: 35px;
   display: none;
+    color: black;
+
 }
 
 .navbar ul {
@@ -111,11 +113,20 @@ footer {
     padding: 0;
     display: block;
   }
+  
   .nav-links {
     display: none; /*cacher le menu par défaut*/
+    
+
   }
+  
   .navbar .menu-hamburger {
     display: block;
+    
+
+  }
+  .nav-links a {
+    color: black;
   }
   .nav-links.mobile-menu {
     display: flex;
@@ -123,6 +134,8 @@ footer {
     top: 0;
     left: 0;
     background-color: rgba(232, 226, 231, 0.884);
+   
+    
     backdrop-filter: blur(200px);
     justify-content: center;
     align-items: center;
@@ -132,6 +145,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   .nav-links ul li {
     margin: 25px 0;

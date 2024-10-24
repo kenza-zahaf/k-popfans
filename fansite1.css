@@ -49,6 +49,7 @@ h3 {
   padding: 10px 0;
   list-style-type: none;
 }
+
 .navbar ul {
   list-style-type: none;
 }
@@ -237,6 +238,9 @@ header {
   }
   .nav-links {
     display: none; /*cacher le menu par défaut*/
+  }
+  .nav-links a {
+    color: black;
   }
   .navbar .menu-hamburger {
     display: block;
