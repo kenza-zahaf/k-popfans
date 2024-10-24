@@ -240,10 +240,28 @@ footer p {
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0;
+    
+  }
+  .navbar .menu-hamburger {
     display: block;
   }
   .nav-links {
-    display: none; /*cacher le menu par défaut*/
+    /* display: none; cacher le menu par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    transition: all 0.5s ease;
+
+
+
   }
   .nav-links a {
     color: black;
@@ -252,17 +270,10 @@ footer p {
   .navbar .menu-hamburger {
     display: block;
   }
-  .nav-links.mobile-menu {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(232, 226, 231, 0.884);
-    backdrop-filter: blur(200px);
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .mobile-menu {
+    margin-left: 0;
   }
+ 
   .nav-links ul {
     flex-direction: column;
     justify-content: center;
