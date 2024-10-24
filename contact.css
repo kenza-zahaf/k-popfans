@@ -39,6 +39,10 @@ body {
   width: 35px;
   display: none;
 }
+.menu-hamburger {
+  filter: brightness(0) saturate(100%);
+  cursor: pointer;
+}
 
 .navbar ul {
   display: flex;
