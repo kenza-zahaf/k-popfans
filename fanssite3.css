@@ -38,6 +38,7 @@ p {
   background-color: #ff66b3;
   padding: 10px 0;
 }
+/*menu bouton*/
 .navbar .menu-hamburger {
   display: flex;
   position: absolute; /*pour mettre le logo où on veut*/
@@ -48,7 +49,7 @@ p {
 }
 .menu-hamburger {
   cursor: pointer;
-} /*chgt couleur image*/
+}
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -238,19 +239,20 @@ footer p {
   .navbar {
     padding: 0;
   }
+  /*apparition du menu*/
   .navbar .menu-hamburger {
     display: block;
   }
   .nav-links {
     /* display: none; cacher le menu par défaut */
-    display: flex;
+    display: flex; /*on aligne les ul*/
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: absolute; /*pour qu'elles prennent tt l'écran*/
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.2); /*blanc transparent*/
+    backdrop-filter: blur(7px); /*pour flouter l'arrière plan*/
     width: 100%;
     height: 100vh;
     margin-left: -100%;
@@ -260,9 +262,6 @@ footer p {
     color: black;
   }
 
-  .navbar .menu-hamburger {
-    display: block;
-  }
   .mobile-menu {
     margin-left: 0;
   }
@@ -273,8 +272,8 @@ footer p {
     align-items: center;
   }
   .nav-links ul li {
-    margin: 25px 0;
-    font-size: 1.2rem;
+    margin: 25px 0; /*espacement des ul et li*/
+    font-size: 1.2rem; /*tailles des ul et li*/
   }
   .img-member {
     width: calc(100% - 20px);
