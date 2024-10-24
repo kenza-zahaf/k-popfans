@@ -40,11 +40,11 @@ p {
 }
 .navbar .menu-hamburger {
   display: flex;
-  position: absolute;
+  position: absolute; /*pour mettre le logo où on veut*/
   top: 35px;
   right: 35px;
   width: 35px;
-  display: none;
+  display: none; /*pour qu'il disparaisse en version pc/tablette*/
 }
 .menu-hamburger {
   filter: invert(63%) sepia(78%) saturate(780%) hue-rotate(290deg)
@@ -66,9 +66,7 @@ p {
   padding: 8px 16px;
   /* transition: background-color: 0.3s; */
 }
-/* .navbar a:hover {
-  background-color: #dc3f8a;
-} */
+
 input[type="search"] {
   width: 200px; /*ajuste de la largeur à l'input*/
   padding: 12px; /*Ajuste la hauteur*/
@@ -77,9 +75,7 @@ input[type="search"] {
   outline: none; /*enllève le contour bleu par défaut*/
   /* transition: border-color 0.3s; transition effet qd on ecrit */
 }
-/* input[type="search"]:focus {
-  border-color: #2517e8d8; /*couleur de la bordure quand on ecrit*/
-/* } */
+
 
 /**************Section Bio***********************/
 .bio-section {
