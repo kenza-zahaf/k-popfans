@@ -102,6 +102,12 @@ input[type="search"] {
   color: #ff66b3;
   margin-bottom: 30px;
 }
+.gallery-section h4 {
+  font-size: 1.2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .image-container {
   display: flex;
   justify-content: center;
@@ -276,6 +282,15 @@ footer p {
     font-size: 1.2rem; /*tailles des ul et li*/
   }
   .img-member {
-    width: calc(100% - 20px);
+    width: calc(27% - 20px); /*trois images pas lignes*/
+  }
+  .gallery-section h4 {
+    font-size: 0.9em;
+  }
+  .gallery-section p {
+    font-size: 0.7rem;
+  }
+  .actu-block p {
+    font-size: 0.9em;
   }
 }
